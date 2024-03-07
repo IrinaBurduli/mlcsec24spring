@@ -1,0 +1,67 @@
+Assignment #1: Print Your Name:
+Objective: Write a program that prints your name to the console. 
+
+print('მე მქვია ირინა')
+output: მე მქვია ირინა 
+
+
+Assignment #2: Simple Math Operations:
+Objective: Create a program that performs simple math operations on two numbers.
+Requirements: The program should add, subtract, multiply, and divide two numbers and print the results. Use
+variables to store the numbers and results. 
+
+number1 = 10
+number2 = 5
+
+addition_result = number1 + number2
+subtraction_result = number1 - number2
+multiplication_result = number1 * number2
+division_result = number1 / number2
+
+print("Addition:", addition_result)
+print("Subtraction:", subtraction_result)
+print("Multiplication:", multiplication_result)
+print("Division:", division_result) 
+output: Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2.0
+
+
+Assignment #3: Area of a Circle:
+Objective: Write a program that calculates the area of a circle.
+Requirements: The program should ask the user to input the radius of the circle and then calculate and display
+the area. Use the formula area = math.pi * radius **2. 
+
+import math
+radius = 7 
+area = math.pi * radius * radius 
+print('The area of the circle is', area) 
+output: The area of the circle is 153.93804002589985 
+
+
+Assignment #4: Convert Minutes to Seconds:
+Objective: Develop a program that converts minutes into seconds.
+Requirements: The program should take a number of minutes as input and output the equivalent number of seconds. 
+
+minutes = 3
+seconds = minutes * 60
+print('3 minutes equals to', seconds, 'seconds') 
+output: 3 minutes equals to 180 seconds 
+
+
+Assignment #5: Print IP addresses:
+Objective: given the network with the following pattern: 192.168.0.3/24.
+Pring all the IP addresses within this network. 
+
+import ipaddress
+network_address = "192.168.0.0/30"
+network = ipaddress.IPv4Network(network_address)
+print('All IP addresses within the network')
+for ip_address in network:
+    print(ip_address) 
+output: All IP addresses within the network:
+192.168.0.0
+192.168.0.1
+192.168.0.2
+192.168.0.3
